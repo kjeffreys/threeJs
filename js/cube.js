@@ -1,19 +1,4 @@
-<!DOCTYPE html>
-
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title>My first three.js app</title>
-		<style>
-			body { margin: 0; }
-			canvas { display: block; }
-		</style>
-	</head>
-	<body>
-		<script src="js/three.js"></script>
-        <script> 
-        var scene = new THREE.Scene();
+var scene = new THREE.Scene();
 var camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
     
 var renderer = new THREE.WebGLRenderer();
@@ -30,13 +15,5 @@ camera.position.z = 5;
 function animate() {
     requestAnimationFrame( animate );
     renderer.render( scene, camera );
-
-    cube.rotation.x += 0.01;
-				cube.rotation.y += 0.01;
-
 }
-        animate(); 
-        </script>
 
-	</body>
-</html>
